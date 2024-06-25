@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34003.232
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{F6A07ABB-12C7-4226-AC5F-9CEE737B36A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionCarBook.Domain", "Core\OnionCarBook.Domain\OnionCarBook.Domain.csproj", "{79E4BCBF-CE5D-4B1D-B9C8-4B78C320BC29}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{694F5499-06EC-495B-9267-B570EBFC72ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionCarBook.Persistence", "Infrastructure\OnionCarBook.Persistence\OnionCarBook.Persistence.csproj", "{65379F71-A81F-418C-8FCD-9E77D1BA6F23}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{86E5F637-F1DF-41B4-9A27-8E5A80816359}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionCarBook.API", "Presentation\OnionCarBook.API\OnionCarBook.API.csproj", "{791C2A37-02AE-4333-82A2-77E94CDB94EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionCarBook.Application", "Core\OnionCarBook.Application\OnionCarBook.Application.csproj", "{3DC452B3-116A-4B20-9620-F460EFFCED8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79E4BCBF-CE5D-4B1D-B9C8-4B78C320BC29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79E4BCBF-CE5D-4B1D-B9C8-4B78C320BC29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79E4BCBF-CE5D-4B1D-B9C8-4B78C320BC29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79E4BCBF-CE5D-4B1D-B9C8-4B78C320BC29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65379F71-A81F-418C-8FCD-9E77D1BA6F23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65379F71-A81F-418C-8FCD-9E77D1BA6F23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65379F71-A81F-418C-8FCD-9E77D1BA6F23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65379F71-A81F-418C-8FCD-9E77D1BA6F23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{791C2A37-02AE-4333-82A2-77E94CDB94EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{791C2A37-02AE-4333-82A2-77E94CDB94EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{791C2A37-02AE-4333-82A2-77E94CDB94EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{791C2A37-02AE-4333-82A2-77E94CDB94EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DC452B3-116A-4B20-9620-F460EFFCED8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DC452B3-116A-4B20-9620-F460EFFCED8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DC452B3-116A-4B20-9620-F460EFFCED8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DC452B3-116A-4B20-9620-F460EFFCED8C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{79E4BCBF-CE5D-4B1D-B9C8-4B78C320BC29} = {F6A07ABB-12C7-4226-AC5F-9CEE737B36A6}
+		{65379F71-A81F-418C-8FCD-9E77D1BA6F23} = {694F5499-06EC-495B-9267-B570EBFC72ED}
+		{791C2A37-02AE-4333-82A2-77E94CDB94EF} = {86E5F637-F1DF-41B4-9A27-8E5A80816359}
+		{3DC452B3-116A-4B20-9620-F460EFFCED8C} = {F6A07ABB-12C7-4226-AC5F-9CEE737B36A6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {711D8A21-574A-41BB-9892-B2D26C203DFC}
+	EndGlobalSection
+EndGlobal
