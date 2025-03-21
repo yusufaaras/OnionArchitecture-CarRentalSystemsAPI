@@ -1,0 +1,25 @@
+﻿@model ResultGetBlogById
+<div class="col-md-8 ftco-animate">
+    <h2 class="mb-3">@Model.Title</h2>
+    <p>@Model.Description</p>
+    
+    <!--Cloud Tag By Blog-->
+    @await Component.InvokeAsync("_BlogDetailTagCloudByBlogComponentPartial", new {id = ViewBag.blogid})
+    
+    <!-- Author About -->
+    @await Component.InvokeAsync("_BlogDetailAuthorAboutComponentPartail", new { id = ViewBag.blogid })
+   
+    <div class="pt-5 mt-5">
+
+        <h3 class="mb-5">@ViewBag.countComment Yorum</h3>
+        <!-- Comments -->
+        @await Component.InvokeAsync("_CommentListByBlogComponentPartail", new { id = ViewBag.blogid })
+        
+        <!-- Add Comments -->
+        @await Html.PartialAsync("~/Views/Blog/AddComment.cshtml", new { id = ViewBag.blogid })
+          
+    </div>
+</div>
+
+<!-- Success And Error Modal -->
+@await Component.InvokeAsync("_DefaultSuccessAndErrorModalComponentPartial")
